@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <style>
+        div {
+            /* 给父亲添加弹性盒子 */
+            display: flex;
+            width: 80%;
+            height: 300px;
+            background-color: pink;
+            /* 默认主轴x轴，元素跟着主轴排列，y轴成为侧轴 */
+            /* flex-direction: row; */
+            /* flex-direction: row-reverse; */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+        }
+
+        div span {
+            width: 150px;
+            height: 100px;
+            background-color: red;
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+    </div>
+</body>
+
+</html>

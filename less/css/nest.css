@@ -1,0 +1,1 @@
+*{padding:0;margin:0;box-sizing:border-box}.header{width:200px;height:200px;background-color:pink}.header a{color:red;text-decoration:none}.header a:hover{color:blue}.nav .logo{color:green}.nav::before{content:""}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>移动端特殊标签</title>
+    <link rel="stylesheet" href="./css/Normalize.css">
+    <style>
+        img, a {
+            /* c3盒子模型 */
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            /* 点击高亮,清除它的背景颜色 */
+            -webkit-tap-highlight-color: transparent;
+            /* 移动端浏览器默认的外观在ios上加上这个属性才能给按钮和输入框自选 */
+            -webkit-appearance: none;
+            /* 禁用长按页面时弹出菜单 */
+            -webkit-touch-callout: none;
+            }
+
+            input {
+            -webkit-appearance: none;
+            -webkit-touch-callout: none;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">黑马</a>
+    <input type="button" value="按钮">
+</body>
+
+</html>

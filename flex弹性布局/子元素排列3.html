@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <style>
+        div {
+            /* 给父亲添加弹性盒子 */
+            display: flex;
+            width: 500px;
+            height: 300px;
+            background-color: pink;
+            /* 默认主轴是x轴 */
+            /* 子元素弹性收缩了，强制五个盒子摆放在盒子内,默认不换行 */
+            flex-direction: row;
+            /* justify-content: center; */
+            /* 侧轴子元素排列，这里是侧轴居中 */
+            align-items: center;
+            /* 移动到侧轴初始位置 */
+            /* align-items: flex-start; */
+            /* 移动到侧轴最终位置 */
+            /* align-items: flex-end; */
+            /* 拉伸到侧轴 */
+            /* align-items: stretch; */
+        }
+
+        div span {
+            /* 强制大小也失效了 */
+            /* box-sizing: border-box; */
+            width: 150px;
+            /* 用拉伸属性时，height应该清空 */
+            height: 100px;
+            background-color: red;
+        }
+
+        div span:nth-child(-n+4) {
+            margin-right: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+    </div>
+</body>
+
+</html>

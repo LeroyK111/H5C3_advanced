@@ -1,0 +1,380 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+div {
+    box-sizing: border-box;
+}
+
+a {
+    color: #222;
+}
+
+body {
+    color: #000;
+    overflow-x: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-text-size-adjust: none;
+    max-width: 540px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    font: normal 16px/1.5 PingFangSC-regular,
+        Tahoma,
+        Lucida Grande,
+        Verdana,
+        Microsoft Yahei,
+        STXihei,
+        hei;
+}
+
+/* 搜索框 */
+.search-index {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    min-width: 320px;
+    max-width: 540px;
+    transform: translate(-50%, 0);
+    width: 100%;
+    height: 44px;
+    padding: 0;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.search {
+    flex: 1;
+    height: 26px;
+    border: 1px solid #ccc;
+    margin: 7px 10px;
+    box-shadow: 0 1px 2px #ccc;
+    border-radius: 5px;
+}
+
+.search i {
+    margin: 0 15px;
+}
+
+
+.search span {
+    vertical-align: top;
+    font-size: 15px;
+    color: #999;
+}
+
+.user {
+    display: block;
+    width: 44px;
+    height: 44px;
+    font-size: 12px;
+    text-align: center;
+    color: #2eaae0;
+    font-weight: bold;
+}
+
+.user::before {
+    display: block;
+    content: "";
+    width: 23px;
+    height: 23px;
+    background: url(../images/sprite.png) no-repeat -59px -194px;
+    background-size: 104px;
+    margin: 4px auto -2px;
+}
+
+/* 焦点图 */
+.focus {
+    padding-top: 44px;
+}
+
+
+
+.focus img {
+    width: 100%;
+}
+
+/* 局部导航 */
+
+.local-nav {
+    display: flex;
+    height: 64px;
+    border-radius: 8px;
+    margin: 3px 4px;
+    font-size: 12px;
+}
+
+.local-nav li {
+    flex: 1;
+}
+
+.local-nav li a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+[class^="local-nav-icon"] {
+    margin-top: 7px;
+    margin-bottom: 4px;
+    width: 32px;
+    height: 32px;
+    background: url(../images/localnav_bg.png) no-repeat 0 0;
+    background-size: 32px;
+}
+
+.local-nav-icon-1 {
+    background-position: 0 -32px;
+}
+
+.local-nav-icon-2 {
+    background-position: 0 -64px;
+}
+
+.local-nav-icon-3 {
+    background-position: 0 -96px;
+}
+
+.local-nav-icon-4 {
+    background-position: 0 -128px;
+}
+
+
+/* 主导航 */
+nav {
+    border-radius: 8px;
+    margin: 0 4px 3px;
+    overflow: hidden;
+    }
+
+    .nav-common:nth-child(2) {
+        margin: 3px 0;
+}
+
+.nav-common {
+    display: flex;
+    height: 88px;
+    background-color: pink;
+}
+
+
+
+
+.nav-items {
+    flex: 1;
+}
+
+.nav-items:nth-child(n+2) {
+    border-left: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-items a {
+    text-align: center;
+    line-height: 44px;
+    color: #fff;
+    font-size: 14px;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.nav-items:nth-child(n+2) a:nth-child(1) {
+    border-bottom: 1px solid #fff;
+}
+
+.nav-items:nth-child(1) {
+    text-align: center;
+    background: url(../images/hotel.png) no-repeat bottom center;
+    background-size: 121px auto;
+}
+.nav-common:nth-child(1) {
+    background: linear-gradient(to right, #FA5A55, #FA994D);
+}
+
+.nav-common:nth-child(2) {
+    background: linear-gradient(to right, #428ef0, #48b5f0);
+}
+
+.nav-common:nth-child(3) {
+    background: linear-gradient(to right, #23b3a9, #65c357);
+}
+
+/* 底层导航 */
+.subnav-entry {
+    display: flex;
+    border-radius: 8px;
+    background-color: #fff;
+    margin: 4px 4px;
+    flex-wrap: wrap;
+    padding: 5px 0;
+}
+
+.subnav-entry li {
+    /* 可以写百分号 */
+    flex: 20%;
+}
+
+.subnav-entry a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+[class^="subnav-entry-icon"] {
+    width: 28px;
+    height: 28px;
+    background-color: pink;
+    margin-top: 4px;
+    background: url(../images/subnav-bg.png) no-repeat 0 0;
+    background-size: 28px;
+    }
+
+    .subnav-entry-icon2 {
+        background-position: 0 -28px;
+    }
+
+    .subnav-entry-icon3 {
+        background-position: 0 -62px;
+    }
+
+    .subnav-entry-icon4 {
+        background-position: 0 -100px;
+    }
+
+    .subnav-entry-icon5 {
+        background-position: 0 -132px;
+    }
+
+    .subnav-entry-icon6 {
+        background-position: 0 -160px;
+    }
+
+    .subnav-entry-icon7 {
+        background-position: 0 -198px;
+    }
+
+    .subnav-entry-icon8 {
+        background-position: 0 -230px;
+}
+
+.subnav-entry-icon9 {
+    background-position: 0 -260px;
+}
+
+.subnav-entry-icon10 {
+    background-position: 0 -290px;
+}
+
+/* 热门活动 */
+.sales-box {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    margin: 4px;
+}
+
+.sales-hd {
+    position: relative;
+    height: 44px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sales-hd h2 {
+    position: relative;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.sales-hd h2::after {
+    position: absolute;
+    top: 12px;
+    left: 20px;
+    content: "";
+    width: 80px;
+    height: 15px;
+    background: url(../images/hot.png) no-repeat 0 -20px;
+    background-size: 80px;
+}
+
+.sales-hd a {
+    position: absolute;
+    right: 15px;
+    top: 6px;
+    background: linear-gradient(to right, #ff6264, #ff7dc7);
+    border-radius: 15px;
+    padding: 3px 20px 3px 10px;
+    color: #fff;
+}
+
+.sales-hd a::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 9px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    transform: rotate(45deg);
+}
+
+.row {
+    display: flex;
+}
+
+.row a {
+    flex: 1;
+    border-bottom: 1px solid #eee;
+    }
+
+    .row a img {
+        width: 100%;
+}
+
+.row a:nth-child(1) {
+    border-right: 1px solid #eee;
+}
+
+/* 尾部 */
+footer {
+    height: 49px;
+    display: flex;
+    border-top: 1px solid #eee;
+    margin-top: 500px;
+    box-shadow: 0 -2px 2px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer a span {
+    display: block;
+    font-size: 11px;
+    color: #666;
+    line-height: 12px;
+}
+
+footer a [class^="icon-home"] {
+    margin-top: 3px;
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(../images/footer.png) no-repeat 0 0;
+    background-size: 32px;
+}
+
+footer a .icon-home1 {
+    background-position: 0 -32px;
+}
+
+footer a .icon-home2 {
+    background-position: 0 -64px;
+}
+
+footer a .icon-home3 {
+    background-position: 0 -96px;
+}

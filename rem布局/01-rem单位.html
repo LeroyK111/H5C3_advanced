@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>rem用法</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+        div {
+            font-size: 12px;
+            width: 15rem;
+            height: 15rem;
+            background-color: purple;
+        }
+        p {
+            /* em相对于父元素的px字体大小来说 */
+            /* width: 10em; */
+            /* height: 10em; */
+
+            /* rem则相对于html font-size的字体大小来说 */
+            width: 10rem;
+            height: 10rem;
+            background-color: pink;
+        /* rem的优点，通过修改html里面的fontsize 实现整体控制 */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p></p>
+    </div>
+</body>
+
+</html>
